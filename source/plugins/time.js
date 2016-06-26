@@ -6,7 +6,7 @@ module.exports = function (bot) {
         if (args.content) {
             var reply = args.reply.bind(args);
 
-            var url = "https://maps.googleapis.com/maps/api/geocode/json?address=" + "Ankara" + "&sensor=false";
+            var url = "https://maps.googleapis.com/maps/api/geocode/json?address=" + args.content + "&sensor=false";
             var xhr = new XMLHttpRequest();
             xhr.open('get', url, true);
             xhr.onload = function () {
