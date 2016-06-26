@@ -2,8 +2,8 @@ module.exports = function (bot) {
     'use strict';
 
     var hammers = {
-        STOP: 'HAMMERTIME!',
-        STAHP: 'HAMMAHTIME!',
+        STOP: '[HAMMERTIME!](https://www.youtube.com/watch?v=otCpCn0l4Wo)',
+        STAHP: '[HAMMAHTIME!](https://www.youtube.com/watch?v=iu0orqfyv8M)',
         HALT: 'HAMMERZEIT!',
         STOY: 'ZABIVAT\' VREMYA!',
         SISTITE: 'MALLEUS TEMPUS!'
