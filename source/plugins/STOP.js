@@ -6,7 +6,7 @@ module.exports = function (bot) {
         STAHP: '[HAMMAHTIME!](https://www.youtube.com/watch?v=iu0orqfyv8M)',
         HALT: 'HAMMERZEIT!',
         STOY: 'ZABIVAT\' VREMYA!',
-        SISTITE: 'MALLEUS TEMPUS!'
+        SISTITE: 'MALLEUS TEMPUS!',
 +	    LOL: 'Did you mean loli?',
 +	    LULZ: 'Did you mean lolis?'
     };
