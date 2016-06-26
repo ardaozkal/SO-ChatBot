@@ -2,7 +2,6 @@ module.exports = function (bot) {
     'use strict';
 
     function timeCommand(args) {
-        var parts = latlon.exec(args);
         if (args.content) {
             var reply = args.reply.bind(args);
 
