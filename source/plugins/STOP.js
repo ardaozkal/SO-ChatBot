@@ -10,6 +10,10 @@ module.exports = function (bot) {
 	    LOL: 'Did you mean loli?',
 	    LULZ: 'Did you mean lolis?'
     };
+    
+    var delays = {
+    	LOL: { time: 30 * 60 * 60, last 0 } // Delay thity minutes.
+    }
 
     // /(STOP|STAHP|...)[\.!\?]?$/
     var re = new RegExp(
@@ -23,6 +27,13 @@ module.exports = function (bot) {
             res = re.exec(sentence);
 
         if (res) {
+            if (res[1] in delays) {
+            	if(delays[res[1]].last > Date.now() - delays[res[1]].time)
+            	    return;
+            	
+            	delays[res[1]].last = Date.now();
+            }
+            
             bot.adapter.out.add(hammers[res[1]], msgObj.room_id);
         }
     });
