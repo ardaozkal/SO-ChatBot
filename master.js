@@ -2693,8 +2693,7 @@ module.exports = function (bot) {
         HALT: 'HAMMERZEIT!',
         STOY: 'ZABIVAT\' VREMYA!',
         SISTITE: 'MALLEUS TEMPUS!',
-	    LOL: 'Did you mean loli?',
-	    LULZ: 'Did you mean lolis?'
+	DUR: 'CEKIC ZAMANI'
     };
 
     // /(STOP|STAHP|...)[\.!\?]?$/
